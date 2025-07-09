@@ -1,0 +1,31 @@
+@import '../app/varibles';
+
+
+.input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    outline: none;
+    margin-bottom: 0.5rem;
+}
+
+.input:focus {
+    border-color: $inputfocus;
+}
+
+.validation {
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+    min-height: 1.2em;
+}
+
+.success {
+    color: $success;
+}
+
+.error {
+    color: $error;
+}

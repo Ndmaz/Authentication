@@ -1,0 +1,30 @@
+@import '../app/varibles';
+
+.redirectbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.button {
+    background-color: $forgoround;
+    color: $background;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $forgoround-secondary;
+        color: $background-secondary;
+
+    }
+
+    &:disabled {
+        background-color: $background;
+        color: $forgoround;
+        cursor: not-allowed;
+    }
+
+}

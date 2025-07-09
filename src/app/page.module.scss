@@ -1,0 +1,46 @@
+@import '../app/varibles';
+
+.page {
+   background-color: $background-secondary;
+   margin: 5rem ;
+   padding: 2rem;
+   border-radius: 1rem
+}
+
+@media (max-width:$mobile){
+    .page{
+      margin: 5rem 0;
+      border-radius: 0;
+      min-height: calc( 100vh - 5rem );
+    
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    grid-row-start: 2;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: var(--foreground);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.input {
+   
+    padding: 10px;
+    border: 1px solid var(--gray-alpha-200);
+    border-radius: 4px;
+    font-size: 1rem;
+}
